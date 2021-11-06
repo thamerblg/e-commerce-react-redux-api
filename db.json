@@ -1,0 +1,228 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "LeBron Witness 6",
+      "gender": "men",
+      "brand": "Nike",
+      "feature": "Lifestyle",
+      "subTitle": "Basketball Shoes",
+      "image": "https://www.zupimages.net/up/21/43/1pxg.jpg",
+      "price": 100,
+      "size": [39, 40, 41, 42, 43],
+      "description": "For this iteration of the LeBron Witness, we swapped out Zoom Air for visible Max Air cushioning—LeBron's favorite—to help dissipate impact forces and provide a responsive sensation. The lightweight, reinforced mesh upper keeps you contained all around, from the webbing that harnesses your forefoot to the external molded pieces that lock in your heel.",
+      "rating": 3,
+      "color": {
+        "White/Persian": "linear-gradient(to left, rgb(255, 255, 255) 50%, rgb(28,57,187) 50%)",
+        "Violet/Yellow": "linear-gradient(to left, rgb(238,130,238) 50%, rgb(255,255,0) 50%)",
+        "Strike/Black": "linear-gradient(to left, rgb(0,102,123) 50%, rgb(0, 0, 0) 50%)"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "name": "Nike Air Force 1 Crater",
+      "gender": "men",
+      "brand": "Nike",
+      "feature": "Lifestyle",
+      "image": "https://www.zupimages.net/up/21/43/pe31.jpg",
+      "subTitle": "Basketball Shoes",
+      "price": 110,
+      "size": [38, 39, 40, 41, 42, 43, 44],
+      "description": "We remixed a classic with at least 20% recycled material by weight, making the Air Force 1 Crater a sneaker for the modern era. The translucent toe reveals a vibrant blend of materials beneath for a bold, 1-of-a-kind look. Nike Grind rubber on the outsole keeps the iconic star pattern on the tip while the unique speckle of the Crater Foam midsole brings the OG into the future.",
+      "rating": 3.5,
+      "color": {
+        "Black/Volt": "linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(206, 255, 0) 50%)",
+        "Volt/White": "linear-gradient(to left, rgb(206, 255, 0) 50%, rgb(255,255,255) 50%)"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "name": "Nike Air Max 97",
+      "gender": "men",
+      "brand": "Nike",
+      "feature": "Lifestyle",
+      "subTitle": "Men's Shoes",
+      "image": "https://www.zupimages.net/up/21/43/imiw.jpg",
+      "price": 170,
+      "size": [39, 40, 41, 42, 43],
+      "description": "Featuring the original ripple design inspired by Japanese bullet trains, the Nike Air Max 97 lets you push your style full-speed ahead. Taking the revolutionary full-length Nike Air unit that shook up the running world and adding fresh colors and crisp details, it lets you ride in first-class comfort.",
+      "rating": 4.75,
+      "color": {
+        "Black/White": "linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%)"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "name": "Nike Air Zoom Pegasus 38",
+      "gender": "men",
+      "brand": "Nike",
+      "feature": "Runing",
+      "subTitle": "Men's Road Running Shoes",
+      "image": "https://www.zupimages.net/up/21/43/8v2q.jpg",
+      "price": 120,
+      "size": [38, 39, 40, 41, 42],
+      "description": "The road is your runway. Get ready to take flight in the workhorse with wings. Back with extra bounce that’s perfect for hitting the pavement. Whether you’re racking up everyday miles or on your long run, feel the spring in your step with the same cushioned support as its predecessor. Breathable mesh in the upper combines the comfort and durability you want with a wider fit at the toes.",
+      "rating": 4.75,
+      "color": {
+        "Volt/Photon": "linear-gradient(to left, rgb(206, 255, 0) 50%, rgb(248,248,232) 50%)",
+        "Dust/Black": "linear-gradient(to left, rgb(178,153,110) 50%, rgb(255, 255, 255) 50%)"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 5,
+      "name": "Jordan Delta 2",
+      "gender": "men",
+      "brand": "Jordan",
+      "feature": "Basketball Shoes",
+      "subTitle": "Men's Shoes",
+      "image": "https://zupimages.net/up/21/43/hbm7.jpg",
+      "price": 130,
+      "size": [38, 39, 40, 41, 42],
+      "description": "The Jordan Delta 2 offers a fresh, fearless take on the features you want: durability, comfort and an attitude that's Jordan to the core. We updated design lines and swapped out some components, but the idea is the same as the first Delta. The 2 still has that clashing combination of supportive and space age-like materials, with lots of different textures and heavy stitching to create a look that's both adventurous and iconic.",
+      "rating": 4.5,
+      "color": {
+        "Chile": "rgb(0, 54, 167)",
+        "Red/Grey": "linear-gradient(to left, rgb(255,0,0) 50%, rgb(128,128,128) 50%)",
+        "Fog/Cyber": "linear-gradient(to left, rgb(220,219,223) 50%, rgb(255, 213, 0) 50%)",
+        "Teal/White": "linear-gradient(to left, rgbrgb(0,128,128) 50%, rgb(255, 255, 255) 50%)"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "name": "Nike Air Force 1 Shadow",
+      "gender": "women",
+      "brand": "Nike",
+      "feature": "Runing",
+      "subTitle": "Women's Shoes",
+      "image": "https://www.zupimages.net/up/21/43/x8hd.jpg",
+      "price": 110,
+      "size": [38, 39, 40, 41],
+      "description": "The Nike Air Force 1 Shadow puts a playful twist on a classic b-ball design. Using a layered approach, doubling the branding and exaggerating the midsole, it highlights AF-1 DNA with a bold, new look.",
+      "rating": 5,
+      "color": {
+        "Sail/Orange": "linear-gradient(to left, rgb(165,206,236) 50%, rgb(255,165,0) 50%)",
+        "Chalk/Dark": "linear-gradient(to left, rgb(251, 247, 245) 50%, rgb(0,0,0) 50%)",
+        "Obsidian/Pink": "linear-gradient(to left, rgb(68,80,85) 50%, rgb(255, 105, 180) 50%)"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 7,
+      "name": "Nike Blazer Mid '77",
+      "gender": "women",
+      "brand": "Nike",
+      "feature": "Runing",
+      "subTitle": "Women's Shoes",
+      "image": "https://www.zupimages.net/up/21/43/u5w1.jpg",
+      "price": 100,
+      "size": [36, 37, 38, 39, 40],
+      "description": "Bring energy to every step you take. Inspired by that perfect lighting moment, this wardrobe staple uses a variety of textures for a wild touch.",
+      "rating": 4.75,
+      "color": {
+        "White/Hyper": "linear-gradient(to left, rgb(255,255,255) 50%, rgb(191, 189, 188) 50%)",
+        "Pink/Hyper": "linear-gradient(to left, rgb(255, 105, 180) 50%, rgb(191, 189, 188)",
+        "Crimson/Racer": "linear-gradient(to left, rgb(153,0,0) 50%, rgb(189, 22, 44) 50%)"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 8,
+      "name": "Nike Blazer Low Platform",
+      "gender": "women",
+      "brand": "Nike",
+      "feature": "Lifestyle",
+      "subTitle": "Women's Shoes",
+      "image": "https://www.zupimages.net/up/21/43/stot.jpg",
+      "price": 95,
+      "size": [36, 37, 38, 39, 40],
+      "description": "Praised for its classic simplicity and comfort, the Nike Blazer Low Platform elevates the hoops icon. The lifted midsole/outsole lets you step confidently while the upper keeps the proportions you loved from the original.",
+      "rating": 4,
+      "color": {
+        "White/black": "linear-gradient(to left, rgb(255,255,255) 50%, rgb(0, 0, 0) 50%)",
+        "White/red": "linear-gradient(to left, rgb(255,255,255) 50%, rgb(255, 0, 0) 50%)"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 9,
+      "name": "Nike Air Vapormax 2021 FK",
+      "gender": "women",
+      "brand": "Nike",
+      "feature": "Training",
+      "subTitle": "Women's Shoes",
+      "image": "https://www.zupimages.net/up/21/43/rpk0.jpg",
+      "price": 200,
+      "size": [37, 38, 39, 40],
+      "description": "Made from at least 40% recycled materials by weight, the Nike Air VaporMax 2021 FK is airy and easy to wear with superstretchy, recycled Flyknit fabric (plus a soft collar that sculpts your ankle). The stitched-on Swoosh and recycled TPU heel clip add a splash of intrigue as you float down the streets on incredibly soft VaporMax cushioning.",
+      "rating": 4.5,
+      "color": {
+        "Black/Metallic": "linear-gradient(to left, rgb(0,0,0) 50%, rgb(168,169,173) 50%)",
+        "Silver/White": "linear-gradient(to left, rgb(192,192,192) 50%, rgb(255, 255, 255) 50%)"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 10,
+      "name": "Nike Victory G Lite",
+      "gender": "unisex",
+      "brand": "Nike",
+      "feature": "Training",
+      "subTitle": "Golf Shoes (Wide)",
+      "image": "https://zupimages.net/up/21/44/lvr8.jpg",
+      "price": 70,
+      "size": [36, 37, 38, 39, 40, 41],
+      "description": "Experience something new in the Nike Victory G Lite—a breathable design made with at least 20% recycled content by total weight of product. Thanks to its lightweight traction pattern, it's built to keep you comfortable from the course to the concrete, and everywhere in between.",
+      "rating": 3,
+      "color": {
+        "Neutral/Grey": "linear-gradient(to left, rgb(238, 238, 238) 50%, rgb(128,128,128) 50%)",
+        "Neutral/White": "linear-gradient(to left, rgb(238, 238, 238) 50%, rgb(255, 255, 255) 50%)",
+        "Neutral/Black": "linear-gradient(to left, rgb(238, 238, 238) 50%, rgb(0, 0, 0) 50%)"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 11,
+      "name": "Nike Force 1 LV8 3",
+      "gender": "kids",
+      "brand": "Nike",
+      "feature": "Lifestyle",
+      "subTitle": "Little Kids' Shoes",
+      "image": "https://zupimages.net/up/21/44/uh5d.jpg",
+      "price": 70,
+      "size": [30, 31, 32, 33, 34],
+      "description": "The Nike Force 1 LV8 3 refreshes the icon from 1982 with soft suede leather. Cupsole construction has heritage AF1 style, and foam cushioning keeps little feet comfy.",
+      "rating": 4,
+      "color": {
+        "Wheat/Gum": "linear-gradient(to left, rgb(245, 222, 179) 50%, rgb(255, 193, 204) 50%)",
+        "Light": "rgb(144, 238, 144)",
+        "Brown/Wheat": "linear-gradient(to left, rgb(150,75,0) 50%, rgb(245, 222, 179) 50%)"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 12,
+      "name": "Nike Air Max 90 LTR",
+      "gender": "kids",
+      "brand": "Nike",
+      "feature": "Lifestyle",
+      "subTitle": "Big Kids' Shoes",
+      "image": "https://zupimages.net/up/21/44/dkh1.jpg",
+      "price": 45,
+      "size": [30, 31, 32, 33, 34, 35],
+      "description": "The Nike Air Max 90 LTR stays true to its OG running roots with the iconic cushioning, smoothed leather and colorful accents. The classic upper gets an extra dose of happy with a Swoosh smiley peeking out at the heel and laces that remind you to put a smile in your step.",
+      "rating": 4.3,
+      "color": {
+        "Wolf": "rgb(156,160,166)",
+        "Grey/Anthracite": "linear-gradient(to left, rgb(128,128,128) 50%, rgb(56, 62, 66) 50%)",
+        "Anthracite/Yellow ": "linear-gradient(to left, rgb(56, 62, 66) 50%, rgb(255,255,0) 50%)",
+        "Strike/White": "linear-gradient(to left, rgb(148,106,129) 50%, rgb(255, 255, 255) 50%)"
+      },
+      "quantity": 1
+    }
+  ]
+}

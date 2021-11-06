@@ -1,0 +1,22 @@
+.card {
+  background-color: #f5fffa;
+}
+
+.card img {
+  padding: 5px;
+  border-radius: 8px;
+}
+hr {
+  margin-top: 0px;
+}
+.iconSatr {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-shadow: 0 0 4px #bbb;
+  -webkit-text-stroke: 1px #fe0;
+  color: #fc0;
+  font-size: 25px;
+  line-height: 1em;
+}
