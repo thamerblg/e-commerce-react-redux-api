@@ -20,7 +20,6 @@ const ProductList = () => {
   }, [products]);
   useEffect(() => {
     setListProduct(filtredProducts);
-    console.log(filtredProducts);
   }, [filtredProducts]);
 
   return (

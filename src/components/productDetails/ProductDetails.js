@@ -5,11 +5,14 @@ import { FaStar } from "react-icons/fa";
 import { addProductToCart } from "../../redux/actions/cartActions";
 import { getProductByID } from "../../redux/actions/productActions";
 import { useEffect } from "react";
+import ImageGallery from "react-image-gallery";
+import Swal from "sweetalert2";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const ProductDetails = () => {
   const selected = useSelector((state) => state.product.currentItem);
-  //const listInCart = useSelector((state) => state.cart.productsCart);
-  console.log(selected);
+  const listInCart = useSelector((state) => state.cart.productsCart);
+  //console.log(selected);
   const { id } = useParams();
   //console.log(id);
   const history = useHistory();
@@ -17,6 +20,21 @@ const ProductDetails = () => {
 
   const handleClick = () => {
     history.goBack();
+  };
+
+  const opensweetalert = () => {
+    Swal.fire({
+      title: "Confirmation",
+      text: "This product has been successfully added to cart",
+      type: "success",
+    });
+  };
+  const opensweetalertdanger = () => {
+    Swal.fire({
+      title: "Oops",
+      text: "This product already existed in your cart",
+      type: "warning",
+    });
   };
 
   useEffect(() => {
@@ -27,7 +45,17 @@ const ProductDetails = () => {
   const addProduct = (selectedItem) => {
     //dispatch(addProductToCart(selectedItem));
     //listInCart.map((item) => item.id === selectedItem.id && alertMsg());
-    dispatch(addProductToCart(selectedItem));
+    let inCart = listInCart.find((item) => item.id === selectedItem.id)
+      ? true
+      : false;
+    if (inCart === true) {
+      opensweetalertdanger();
+    } else {
+      dispatch(addProductToCart(selectedItem));
+      opensweetalert();
+    }
+
+    console.log(inCart);
   };
 
   if (!selected) {
@@ -38,7 +66,15 @@ const ProductDetails = () => {
     <div className="row ">
       <div className="card flex-row align-items-center my-3">
         <div className="col-md-4">
-          <img src={selected.image} className="card-img" alt={selected.name} />
+          {/*<img src={selected.image} className="card-img" alt={selected.name} />*/}
+          <ImageGallery
+            items={selected.images}
+            showBullets={true}
+            showThumbnails={true}
+            lazyLoad={true}
+            showPlayButton={false}
+            showFullscreenButton={false}
+          />
         </div>
         <div className="col-md-8">
           <div className="card-body">

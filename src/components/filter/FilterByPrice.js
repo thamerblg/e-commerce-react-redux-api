@@ -1,12 +1,20 @@
+import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { filterProductByPrice } from "../../redux/actions/productActions";
 
 const FilterByPrice = () => {
+  const allProducts = useSelector((state) => state.product.products);
   const dispatch = useDispatch();
 
   const handleFilter = (e) => {
     dispatch(filterProductByPrice(e.target.value));
-    console.log(filterProductByPrice(e.target.value));
+  };
+
+  const getNbrProducts = (min, max) => {
+    const newList = allProducts.filter(
+      (item) => item.price >= min && item.price <= max
+    );
+    return newList.length;
   };
 
   return (
@@ -25,6 +33,7 @@ const FilterByPrice = () => {
             onClick={handleFilter}
           />
           <label className="form-check-label">Under 50$</label>
+          <span className="fs-12 px-2">({getNbrProducts(0, 50)})</span>
         </div>
 
         <div className="form-check form-check-inline">
@@ -37,6 +46,7 @@ const FilterByPrice = () => {
             onClick={handleFilter}
           />
           <label className="form-check-label">From 50$ to 100$</label>
+          <span className="fs-12 px-2">({getNbrProducts(50, 100)})</span>
         </div>
 
         <div className="form-check form-check-inline">
@@ -49,6 +59,7 @@ const FilterByPrice = () => {
             onClick={handleFilter}
           />
           <label className="form-check-label">From 100$ to 150$</label>
+          <span className="fs-12 px-2">({getNbrProducts(100, 150)})</span>
         </div>
 
         <div className="form-check form-check-inline">
@@ -61,6 +72,7 @@ const FilterByPrice = () => {
             onClick={handleFilter}
           />
           <label className="form-check-label">From 150$ to 200$</label>
+          <span className="fs-12 px-2">({getNbrProducts(150, 200)})</span>
         </div>
 
         <div className="form-check form-check-inline">
@@ -73,6 +85,7 @@ const FilterByPrice = () => {
             onClick={handleFilter}
           />
           <label className="form-check-label">Over than 200$</label>
+          <span className="fs-12 px-2">({getNbrProducts(200, 999)})</span>
         </div>
       </div>
     </div>

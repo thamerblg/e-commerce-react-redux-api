@@ -10,7 +10,6 @@ const FilterByRating = () => {
 
   const handleFilter = (e) => {
     dispatch(filterProductByRating(e));
-    console.log(filterProductByRating(e));
   };
 
   return (

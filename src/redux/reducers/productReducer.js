@@ -21,6 +21,14 @@ export default (state = initialState, { type, payload }) => {
         currentItem: payload,
       };
 
+    case ActionsTypes.TOGGLE_LOVE_PRODUCT:
+      return {
+        ...state,
+        products: state.products.map((item) =>
+          item.id === payload ? { ...item, inLove: !item.inLove } : item
+        ),
+      };
+
     case ActionsTypes.FILTER_PRODUCT_BY_GENDER:
       return {
         ...state,
@@ -75,6 +83,11 @@ export default (state = initialState, { type, payload }) => {
         ),
       };
 
+    case ActionsTypes.IGNORE_FILTER:
+      return {
+        ...state,
+        filtredProducts: state.products,
+      };
     default:
       return state;
   }

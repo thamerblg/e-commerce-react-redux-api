@@ -1,0 +1,18 @@
+table {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+table th {
+  background-color: rgba(108, 117, 125, 0.5) !important;
+  color: #fff;
+  padding: 10px 20px;
+}
+table tr {
+  border-width: 1px;
+  text-align: center;
+}
+table img {
+  width: 100%;
+  object-fit: cover;
+}

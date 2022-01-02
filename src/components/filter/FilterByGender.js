@@ -1,11 +1,17 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { filterProductByGender } from "../../redux/actions/productActions";
 
 const FilterByGender = () => {
+  const allProducts = useSelector((state) => state.product.products);
   const dispatch = useDispatch();
 
   const handleFilter = (e) => {
     dispatch(filterProductByGender(e.target.value));
+  };
+  // eslint-disable-next-line
+  const getNbrProducts = (gender) => {
+    const newList = allProducts.filter((item) => item.gender === gender);
+    return newList.length;
   };
 
   return (
@@ -24,6 +30,7 @@ const FilterByGender = () => {
             onClick={handleFilter}
           />
           <label className="form-check-label">All</label>
+          <span className="fs-12 px-2">({allProducts.length})</span>
         </div>
 
         <div className="form-check form-check-inline">
@@ -36,6 +43,7 @@ const FilterByGender = () => {
             onClick={handleFilter}
           />
           <label className="form-check-label">Men</label>
+          <span className="fs-12 px-2">({getNbrProducts("men")})</span>
         </div>
 
         <div className="form-check form-check-inline">
@@ -48,6 +56,7 @@ const FilterByGender = () => {
             onClick={handleFilter}
           />
           <label className="form-check-label">Women</label>
+          <span className="fs-12 px-2">({getNbrProducts("women")})</span>
         </div>
 
         <div className="form-check form-check-inline">
@@ -60,6 +69,7 @@ const FilterByGender = () => {
             onClick={handleFilter}
           />
           <label className="form-check-label">Unisex</label>
+          <span className="fs-12 px-2">({getNbrProducts("unisex")})</span>
         </div>
 
         <div className="form-check form-check-inline">
@@ -72,6 +82,7 @@ const FilterByGender = () => {
             onClick={handleFilter}
           />
           <label className="form-check-label">Kids</label>
+          <span className="fs-12 px-2">({getNbrProducts("kids")})</span>
         </div>
       </div>
     </div>

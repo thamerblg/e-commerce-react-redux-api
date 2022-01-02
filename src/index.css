@@ -4,3 +4,6 @@ body {
   font-family: "Poppins", sans-serif !important;
   background-color: #0f0e17 !important;
 }
+.fs-12 {
+  font-size: 12px;
+}

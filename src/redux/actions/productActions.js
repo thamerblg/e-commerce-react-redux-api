@@ -34,6 +34,12 @@ export const getProductByID = (id) => {
   };
 };
 
+export const toggleLoveProduct = (payload) => {
+  return {
+    type: ActionsTypes.TOGGLE_LOVE_PRODUCT,
+    payload,
+  };
+};
 export const filterProductByGender = (payload) => {
   return {
     type: ActionsTypes.FILTER_PRODUCT_BY_GENDER,
@@ -58,6 +64,13 @@ export const filterProductByRating = (payload) => {
 export const filterProductByName = (payload) => {
   return {
     type: ActionsTypes.FILTER_PRODUCT_BY_NAME,
+    payload,
+  };
+};
+
+export const ignoreFilter = (payload) => {
+  return {
+    type: ActionsTypes.IGNORE_FILTER,
     payload,
   };
 };

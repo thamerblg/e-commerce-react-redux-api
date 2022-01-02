@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { clearCart } from "../../redux/actions/cartActions";
 import CartItem from "./CartItem";
+import "./Cart.css";
 
 const Cart = () => {
   const [productCart, setProductCart] = useState([]);
@@ -39,12 +40,25 @@ const Cart = () => {
 
       {productCart.length !== 0 && (
         <>
-          <ul className="px-0 mb-0 rounded">
-            {productCart.map((product) => (
-              <CartItem product={product} key={product.id} />
-            ))}
-          </ul>
-
+          <table>
+            <thead>
+              <tr>
+                <th>Product image</th>
+                <th>Product name</th>
+                <th>Gender</th>
+                <th>Unit price</th>
+                <th>Quantity</th>
+                <th>Total price</th>
+                <th>Delete product</th>
+              </tr>
+            </thead>
+            <tbody>
+              {productCart.map((product) => (
+                <CartItem product={product} key={product.id} />
+              ))}
+            </tbody>
+          </table>
+          {/*
           <div className="p-4 d-flex justify-content-end">
             <button
               className="btn return-link btn-light btn-sm "
@@ -53,7 +67,15 @@ const Cart = () => {
               Clear Cart
             </button>
           </div>
-
+*/}
+          <div className="p-4 d-flex justify-content-end">
+            <button
+              className="btn return-link btn-light btn-sm "
+              onClick={hundelClick}
+            >
+              Clear Cart
+            </button>
+          </div>
           <div className="d-flex justify-content-end mb-4">
             <div className="col-md-3 bg-light p-3 d-flex justify-content-between">
               <strong className="mb-0 fs-6 text-uppercase">Total price:</strong>
